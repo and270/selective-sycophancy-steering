@@ -1,0 +1,283 @@
+{
+  "evidence_scope": {
+    "endpoint_results": "verified_from_persisted_response_and_metric_primitives",
+    "generalization_targets": [
+      "additional_model_families_and_sizes",
+      "larger_random_control_bank",
+      "matched_precision_and_intervention_units"
+    ],
+    "interpretation": "direct_intervention_estimates_for_the_executed_four_model_panel",
+    "layer_selection": "held_out_probe_with_five_seeded_random_controls_per_layer"
+  },
+  "intervention_scale": {
+    "bytes": 7150,
+    "path": "INTERVENTION_SCALE_COMPARISON.json",
+    "sha256": "652dc2eeba7d26fa457f51227bd930a50a874add4909ec4018e312ab971af518"
+  },
+  "inventory_scope": "Every archive member except the embedded manifest itself has a path, byte count, and SHA-256 entry here.",
+  "models": {
+    "Gemma 4 E2B": {
+      "files": {
+        "behavior": {
+          "bytes": 4696341,
+          "path": "expanded_gemma4_e2b_20260805/expanded_behavior.json",
+          "sha256": "27c7b77dbf539bc759bf3adb9b3931d59c5353275f8433be0ed334e284afb696",
+          "source_sha256": "a0341edef0e82f94e5d5e5ae2bd155dbe8296e62a91c8ff2eb9262f13117dac3",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "directions": {
+          "bytes": 430264,
+          "path": "expanded_gemma4_e2b_20260805/fit_probe/directions.safetensors",
+          "sha256": "3591880915f3b7e3e6dcf0c0c562306dd37d246c23d152d527a77ffbe3462ac2"
+        },
+        "fit": {
+          "bytes": 714551,
+          "path": "expanded_gemma4_e2b_20260805/fit_probe/fit_probe.json",
+          "sha256": "52fb45b5331181d647356d44e7679e8016dfa890d18d3e5414e42e5af1b8e03e",
+          "source_sha256": "64723bcd58db0a84a1230047e7033d4295d0f628b1fbc70609e144574de85550",
+          "transformation": "Absolute checkout prefixes in JSON string values replaced with <REPOSITORY>; legacy source launch-gate field replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "gsm": {
+          "bytes": 1408559,
+          "path": "expanded_gemma4_e2b_20260805/expanded_gsm8k.json",
+          "sha256": "8ccd37b0ccee94e2b62e4c8df447b352d7980b87be1d4556eb616e4cbd8404e7",
+          "source_sha256": "9493a7278d597cf6aa054c58d0ab5b9943c513dccad52c1fbf999215e1fa352b",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "kl": {
+          "bytes": 401584,
+          "path": "expanded_gemma4_e2b_20260805/expanded_kl.json",
+          "sha256": "8e3a455a60e6eba340eb28b03fd5711ae4ce7a30af7835dfcec4c7273a926c9d",
+          "source_sha256": "4c5443eb8d94cac228a914c395bb58158b1d2a76bb0f701c0aacacb686463f08",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        }
+      },
+      "model_key": "gemma4_e2b_it",
+      "primary_zero_based_layer": 12,
+      "provenance": {
+        "repository_commit": "unavailable",
+        "source_launch_class": "engineering_smoke",
+        "source_repository_dirty": true,
+        "strict_tagged_pipeline_eligible_at_launch": false,
+        "study_sha256": "8fa3d463fc29ab4861b143303f938cbbff26b992a6d5abdccca9fff6a264af46",
+        "uv_lock_sha256": "c10842a8f215259ef7535358d2a8b890d913532752db2580d30bca152dbede53"
+      },
+      "run_id": "expanded_gemma4_e2b_20260805"
+    },
+    "Gemma 4 E4B": {
+      "files": {
+        "behavior": {
+          "bytes": 5030420,
+          "path": "expanded_gemma4_e4b_20260805/expanded_behavior.json",
+          "sha256": "150670563c9df26622473e47aea4f236e46f8eb0d652d9cd29f2d2e0b05844a5",
+          "source_sha256": "e1b124d9dfef882bda09fefd3c1a26dabf2baa9e56d50caa725173c7e42546bd",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "directions": {
+          "bytes": 860344,
+          "path": "expanded_gemma4_e4b_20260805/fit_probe/directions.safetensors",
+          "sha256": "bd4c5b82dd32686d98e5938040fecfac2a4b3cd690b3951e2157c8dca2aba70e"
+        },
+        "fit": {
+          "bytes": 818600,
+          "path": "expanded_gemma4_e4b_20260805/fit_probe/fit_probe.json",
+          "sha256": "dd3c7122ce314c4cad209df1ba9967c1a935a3f00c044d6ff52a34759109a782",
+          "source_sha256": "f2358329d33fab1de713b3818a4c54b69a210e7c3c50b7a60cdee4c9efb41704",
+          "transformation": "Absolute checkout prefixes in JSON string values replaced with <REPOSITORY>; legacy source launch-gate field replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "gsm": {
+          "bytes": 1369918,
+          "path": "expanded_gemma4_e4b_20260805/expanded_gsm8k.json",
+          "sha256": "97d5fc0156dc746bab2390d7fbbc6e8e446ffd1372a6689565f2363081823696",
+          "source_sha256": "d6e92450fdfe8e36c6922d5aa44545ea408b56a8f1ba4a4e4bd97cf25286c6d0",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "kl": {
+          "bytes": 522298,
+          "path": "expanded_gemma4_e4b_20260805/expanded_kl.json",
+          "sha256": "6c11d1f46bd3873ac4b80f12d7e66856e664c064b37191e2016a75cec7db7a89",
+          "source_sha256": "291cc1f8cf8a8145a931bae49f42f0be2d38c91d29ac4edcbc73893b356487c5",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        }
+      },
+      "model_key": "gemma4_e4b_it",
+      "primary_zero_based_layer": 28,
+      "provenance": {
+        "repository_commit": "unavailable",
+        "source_launch_class": "engineering_smoke",
+        "source_repository_dirty": true,
+        "strict_tagged_pipeline_eligible_at_launch": false,
+        "study_sha256": "8fa3d463fc29ab4861b143303f938cbbff26b992a6d5abdccca9fff6a264af46",
+        "uv_lock_sha256": "c10842a8f215259ef7535358d2a8b890d913532752db2580d30bca152dbede53"
+      },
+      "run_id": "expanded_gemma4_e4b_20260805"
+    },
+    "Qwen3.5-2B": {
+      "files": {
+        "behavior": {
+          "bytes": 4861309,
+          "path": "expanded_qwen35_2b_20260805/expanded_behavior.json",
+          "sha256": "30f5d535be65cc9035ef2af3c616d974c9fb3605b9f062f7f391227ce5c0bbc7",
+          "source_sha256": "b8621f4b2caeb4d6c25e5f72fcbb0121ece59aad737b23d2f170c3183b9b6dd4",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "directions": {
+          "bytes": 393400,
+          "path": "expanded_qwen35_2b_20260805/fit_probe/directions.safetensors",
+          "sha256": "307f12d5d75258e7dc931a0f192c4c256d97b5952d088b912c8f8e03f5de5fc1"
+        },
+        "fit": {
+          "bytes": 756882,
+          "path": "expanded_qwen35_2b_20260805/fit_probe/fit_probe.json",
+          "sha256": "84be7f77d7b1ddcf2310b90ba568c012631d359ea1a6d4abc5210b98c60ed0b9",
+          "source_sha256": "4b0cbcc1d1aa2a4cf9080d238fa4cc5cbf4947e15534f537e14faea9ec9ca410",
+          "transformation": "Absolute checkout prefixes in JSON string values replaced with <REPOSITORY>; legacy source launch-gate field replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "gsm": {
+          "bytes": 1410153,
+          "path": "expanded_qwen35_2b_20260805/expanded_gsm8k.json",
+          "sha256": "0798475f1903776e9aaef0c1bed2bfaf5898d8cd98b72006c6e6ae440038c8bb",
+          "source_sha256": "c37f20b643e9c504568e5ee3b36ce8edf95dfd5a55e55ad215d72a824116548c",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "kl": {
+          "bytes": 530411,
+          "path": "expanded_qwen35_2b_20260805/expanded_kl.json",
+          "sha256": "ff463cd490489add1431a2c02563d07f818828a5c14c9c040986e52757ca0b06",
+          "source_sha256": "c7ab9597ddf64886ceafa93131aaff19d8cd95ccc085dd03573573b5c3c58ea0",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        }
+      },
+      "model_key": "qwen35_2b",
+      "primary_zero_based_layer": 3,
+      "provenance": {
+        "repository_commit": "547b266b07da012bb9698ef8df30c158c891a13f",
+        "source_launch_class": "engineering_smoke",
+        "source_repository_dirty": true,
+        "strict_tagged_pipeline_eligible_at_launch": false,
+        "study_sha256": "da727db9971c287add40a73b47f1081ea64519dbf6c3ba247e3889422349643b",
+        "uv_lock_sha256": "c10842a8f215259ef7535358d2a8b890d913532752db2580d30bca152dbede53"
+      },
+      "run_id": "expanded_qwen35_2b_20260805"
+    },
+    "Qwen3.5-4B": {
+      "files": {
+        "behavior": {
+          "bytes": 5174743,
+          "path": "expanded_qwen35_4b_20260805/expanded_behavior.json",
+          "sha256": "be458473dbd97bff26fe402f3e2f7e9885371382202e6b04aa9c0d11409fb28a",
+          "source_sha256": "f290b610de9c11cf3c7eb9a63cb8b1697c6688798e8d08ff6754cbf3eb174dd9",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "directions": {
+          "bytes": 655544,
+          "path": "expanded_qwen35_4b_20260805/fit_probe/directions.safetensors",
+          "sha256": "c38cd968d486cda76e67b7f725e7845a97f4bf340dea76664b27833732360973"
+        },
+        "fit": {
+          "bytes": 839734,
+          "path": "expanded_qwen35_4b_20260805/fit_probe/fit_probe.json",
+          "sha256": "7a12652a0d71ae7b8dfd166a76784baa9f9a39de8dfdcba0a8bca993ae847057",
+          "source_sha256": "f91032448e73a8b107ba12b2ba8ba03054da1e3a5b4398b717fc528e34b7e959",
+          "transformation": "Absolute checkout prefixes in JSON string values replaced with <REPOSITORY>; legacy source launch-gate field replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "gsm": {
+          "bytes": 1402102,
+          "path": "expanded_qwen35_4b_20260805/expanded_gsm8k.json",
+          "sha256": "16402e9f2f8ed9b575ba53235d865db8813dd4eebae69775243d4543effb3c27",
+          "source_sha256": "27f95ad03cef095192cbae0a566393924da6c1e1e6d8401f4a5e36b3444b9a31",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        },
+        "kl": {
+          "bytes": 525269,
+          "path": "expanded_qwen35_4b_20260805/expanded_kl.json",
+          "sha256": "b21baa70f62f430261e1c3928e21f35da4c80360aa43674f30c93c923fb7aa3a",
+          "source_sha256": "1050e2fc051850d7bfb780f7686ccca354ba61ab39eba413e324d993223826cc",
+          "transformation": "Legacy endpoint gate replaced by the structured release evidence scope; all other parsed values preserved."
+        }
+      },
+      "model_key": "qwen35_4b",
+      "primary_zero_based_layer": 18,
+      "provenance": {
+        "repository_commit": "unavailable",
+        "source_launch_class": "engineering_smoke",
+        "source_repository_dirty": true,
+        "strict_tagged_pipeline_eligible_at_launch": false,
+        "study_sha256": "8fa3d463fc29ab4861b143303f938cbbff26b992a6d5abdccca9fff6a264af46",
+        "uv_lock_sha256": "c10842a8f215259ef7535358d2a8b890d913532752db2580d30bca152dbede53"
+      },
+      "run_id": "expanded_qwen35_4b_20260805"
+    }
+  },
+  "notices": {
+    "CITATION.cff": {
+      "bytes": 1153,
+      "path": "CITATION.cff",
+      "sha256": "c9013711688a50dce7b9d00ec821fb8b259f3c1e3e4636257e3e4e1f3be4c22b"
+    },
+    "DATA_LICENSES.md": {
+      "bytes": 2523,
+      "path": "DATA_LICENSES.md",
+      "sha256": "66952c1ae5ba7069d3e2eb83879f523d3a5fde113dfb3709f0baddd2c8cb09e7"
+    },
+    "LICENSE": {
+      "bytes": 34523,
+      "path": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    "MODEL_TERMS.md": {
+      "bytes": 1935,
+      "path": "MODEL_TERMS.md",
+      "sha256": "4d28ce6f09683a3b4698fb2da0b218c4324fbedea4db30338aeb634c32c3efbe"
+    },
+    "NOTICE.md": {
+      "bytes": 810,
+      "path": "NOTICE.md",
+      "sha256": "5653ee4c7f255a487fa8e4cb92bc0c8a0f5081b26111c8c71ffab28dd25bdacd"
+    },
+    "THIRD_PARTY.md": {
+      "bytes": 2369,
+      "path": "THIRD_PARTY.md",
+      "sha256": "c5b977a56049f72898456cd19942167c3e7f82e780570f6ec6d10be148d82c5e"
+    },
+    "licenses/GSM8K-MIT.txt": {
+      "bytes": 1063,
+      "path": "licenses/GSM8K-MIT.txt",
+      "sha256": "893951b3bf94db8df1b13e05da5cdeb499400960e4d44a3962a8b33ed0b4f28e"
+    },
+    "licenses/WIKITEXT-2-CC-BY-SA-3.0.md": {
+      "bytes": 909,
+      "path": "licenses/WIKITEXT-2-CC-BY-SA-3.0.md",
+      "sha256": "d89b9bd7cb9ee79115d715a96b598946992b7c454e835a6e4f3529505d113865"
+    },
+    "paper/references.bib": {
+      "bytes": 13526,
+      "path": "paper/references.bib",
+      "sha256": "b0531b2b633dd1481490c9435781ee99b6a9150b88756efa6b1765ffcabc3e3d"
+    }
+  },
+  "provenance_scope": "Endpoint primitives are hash-bound and recomputable. Original launch metadata are preserved; incomplete clean-commit identifiers limit exact direction refitting from a known source revision.",
+  "redistributed_dataset_content": {
+    "gsm8k_reference_and_reconstructed_text": {
+      "embedded": true,
+      "license": "MIT",
+      "notice": "licenses/GSM8K-MIT.txt"
+    },
+    "wikitext_2_context_text": {
+      "embedded": true,
+      "license": "CC-BY-SA-3.0",
+      "notice": "licenses/WIKITEXT-2-CC-BY-SA-3.0.md"
+    }
+  },
+  "report": {
+    "bytes": 8437,
+    "path": "FOUR_MODEL_EXPLORATORY_FRONTIER.md",
+    "sha256": "560534a35dd84a4622ae77a61e881e71a69d5f29c860fe19e8b07b162403231c"
+  },
+  "schema_version": "selective_sycophancy_frontier_release.v2",
+  "summary": {
+    "bytes": 25218,
+    "path": "FOUR_MODEL_EXPLORATORY_FRONTIER.json",
+    "sha256": "cf3ff0773b0df82418200576a8c7e09825b82306bfa16c4ac09fb180ab07f421"
+  }
+}

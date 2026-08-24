@@ -1,0 +1,105 @@
+% Vector diagram for the Selective Sycophancy Steering pipeline.
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+    font=\small,
+    >=Latex,
+    flow/.style={-Latex, line width=0.8pt, draw=inkMuted},
+    stage/.style={
+      rounded corners=2pt,
+      draw=inkMuted,
+      line width=0.7pt,
+      fill=panelBlue,
+      align=center,
+      inner xsep=7pt,
+      inner ysep=6pt,
+      minimum height=1.05cm
+    },
+    operator/.style={
+      rounded corners=2pt,
+      draw=accentBlue,
+      line width=1pt,
+      fill=accentBlue!8,
+      align=center,
+      inner xsep=8pt,
+      inner ysep=7pt,
+      minimum height=1.1cm
+    },
+    endpoint/.style={
+      rounded corners=2pt,
+      draw=inkMuted,
+      line width=0.65pt,
+      fill=panelWarm,
+      align=center,
+      inner xsep=5pt,
+      inner ysep=5pt,
+      minimum width=3.2cm,
+      minimum height=0.95cm
+    }
+  ]
+    \node[stage, minimum width=3.6cm] (fit) {
+      \textbf{Fit split} ($n=300$)\\[-1pt]
+      fixed questions; natural responses\\[-1pt]
+      label caving vs. resistance
+    };
+    \node[stage, minimum width=3.8cm, right=0.55cm of fit] (direction) {
+      \textbf{Direction at every block}\\[-1pt]
+      $d_\ell=\mathbb{E}[h_\ell\mid\mathrm{cave}]
+      -\mathbb{E}[h_\ell\mid\mathrm{resist}]$
+    };
+    \node[stage, minimum width=3.7cm, right=0.55cm of direction] (probe) {
+      \textbf{Probe split} ($n=100$)\\[-1pt]
+      AUROC + random-axis layer screen
+    };
+    \node[operator, minimum width=3.5cm, right=0.55cm of probe] (steer) {
+      \textbf{Runtime intervention}\\[-1pt]
+      $h'_\ell=h_\ell+\alpha d_\ell$\\[-1pt]
+      $\alpha\in\{-0.5,-1,-2\}$
+    };
+
+    \draw[flow] (fit) -- (direction);
+    \draw[flow] (direction) -- (probe);
+    \draw[flow] (probe) -- (steer);
+
+    \coordinate (branch) at ($(direction.south)!0.5!(probe.south)+(0,-0.78)$);
+    \draw[flow] (steer.south) |- (branch);
+
+    \node[endpoint, below=1.55cm of fit] (pressure) {
+      \textbf{False pressure}\\
+      pressure-error reduction
+    };
+    \node[endpoint, right=0.45cm of pressure] (correction) {
+      \textbf{True correction}\\
+      natural + controlled updating
+    };
+    \node[endpoint, right=0.45cm of correction] (kl) {
+      \textbf{Neutral text}\\
+      KL, JS, top-1 agreement
+    };
+    \node[endpoint, right=0.45cm of kl] (gsm) {
+      \textbf{Mathematics}\\
+      paired sampled GSM8K
+    };
+
+    \draw[flow] (branch) -| (pressure.north);
+    \draw[flow] (branch) -| (correction.north);
+    \draw[flow] (branch) -| (kl.north);
+    \draw[flow] (branch) -| (gsm.north);
+
+    \node[
+      font=\scriptsize,
+      text=inkMuted,
+      above=0.12cm of branch
+    ] {disjoint evaluation split ($n=1{,}310$)};
+  \end{tikzpicture}
+  \caption{
+    The evaluated pipeline separates direction fitting, layer screening, and
+    outcome measurement. Fit and probe questions are shared across models,
+    while behavioral labels are generated anew by each model's natural
+    follow-up responses. Steering is temporary and model weights remain
+    unchanged. The intervention is assessed as a multi-objective frontier:
+    resistance to false pressure must be read together with acceptance of true
+    correction and off-target behavior.
+  }
+  \label{fig:method-pipeline}
+\end{figure}

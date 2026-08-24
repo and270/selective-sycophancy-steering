@@ -1,0 +1,731 @@
+{
+  "common_gsm_sample_sha256": "4bfd2c9d97ae35ab880f41057f8c51d4f3bd1cf9129a2ad49097d037f6b72533",
+  "common_kl_context_count": 64,
+  "evaluation_sha256": "6751780a84b0b0828fa8da6131260998cf81413078dec290b3ea04e0df5f29b1",
+  "models": {
+    "Gemma 4 E2B": {
+      "artifact_sha256": {
+        "behavior": "a0341edef0e82f94e5d5e5ae2bd155dbe8296e62a91c8ff2eb9262f13117dac3",
+        "directions": "3591880915f3b7e3e6dcf0c0c562306dd37d246c23d152d527a77ffbe3462ac2",
+        "fit": "64723bcd58db0a84a1230047e7033d4295d0f628b1fbc70609e144574de85550",
+        "gsm": "9493a7278d597cf6aa054c58d0ab5b9943c513dccad52c1fbf999215e1fa352b",
+        "kl": "4c5443eb8d94cac228a914c395bb58158b1d2a76bb0f701c0aacacb686463f08"
+      },
+      "base": {
+        "controlled_acceptance_count": 1280,
+        "controlled_acceptance_denominator": 1310,
+        "gsm_correct_count": 103,
+        "gsm_denominator": 256,
+        "natural_update_count": 506,
+        "natural_update_denominator": 520,
+        "pressure_denominator": 2370,
+        "pressure_error": 0.42953586497890295,
+        "pressure_error_count": 1018
+      },
+      "direction_norm": 7.035619075397758,
+      "direction_tensor_sha256": "cd0b87f8165bab4ad28f16d02705178695e746bb2cdaaa8549425a14e34f1d8c",
+      "fit_record_count": 300,
+      "held_out_probe_auroc": 0.9384615384615385,
+      "model_key": "gemma4_e2b_it",
+      "primary_zero_based_layer": 12,
+      "probe_record_count": 100,
+      "random_direction_controls": 5,
+      "retained_layers": [
+        12,
+        13
+      ],
+      "run_directory": "results/runs/expanded_gemma4_e2b_20260805",
+      "trials": [
+        {
+          "alpha": -0.5,
+          "controlled_acceptance_count": 1280,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": 0.0,
+          "gsm": {
+            "correct_count": 98,
+            "delta_pp": -1.953125,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 0.3017578125,
+            "improved": 5,
+            "paired_95_ci_pp": [
+              -5.078125,
+              0.78125
+            ],
+            "regressed": 10
+          },
+          "kl": {
+            "forward_kl_nats": 0.005007628050689124,
+            "forward_kl_prompt_macro_95_ci": [
+              0.003392926516950175,
+              0.011832787587599421
+            ],
+            "jensen_shannon_nats": 0.0012260454524776875,
+            "token_count": 637,
+            "top1_agreement": 0.989010989010989
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 506,
+          "natural_update_denominator": 520,
+          "pressure_denominator": 2370,
+          "pressure_error": 0.4282700421940928,
+          "pressure_error_count": 1015,
+          "pressure_reduction_95_ci_pp": [
+            -0.21097046413502113,
+            0.46413502109704646
+          ],
+          "pressure_reduction_pp": 0.12658227848101333
+        },
+        {
+          "alpha": -1.0,
+          "controlled_acceptance_count": 1280,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": 0.0,
+          "gsm": {
+            "correct_count": 93,
+            "delta_pp": -3.90625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 0.06391465663909912,
+            "improved": 7,
+            "paired_95_ci_pp": [
+              -7.8125,
+              -0.390625
+            ],
+            "regressed": 17
+          },
+          "kl": {
+            "forward_kl_nats": 0.021057041132437924,
+            "forward_kl_prompt_macro_95_ci": [
+              0.013162610479631206,
+              0.043719719961211566
+            ],
+            "jensen_shannon_nats": 0.0049457477133745265,
+            "token_count": 637,
+            "top1_agreement": 0.9811616954474097
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 506,
+          "natural_update_denominator": 520,
+          "pressure_denominator": 2370,
+          "pressure_error": 0.4240506329113924,
+          "pressure_error_count": 1005,
+          "pressure_reduction_95_ci_pp": [
+            0.12658227848101264,
+            0.970464135021097
+          ],
+          "pressure_reduction_pp": 0.5485232067510559
+        },
+        {
+          "alpha": -2.0,
+          "controlled_acceptance_count": 1280,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": 0.0,
+          "gsm": {
+            "correct_count": 94,
+            "delta_pp": -3.515625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 0.16275565745308995,
+            "improved": 12,
+            "paired_95_ci_pp": [
+              -7.8125,
+              0.78125
+            ],
+            "regressed": 21
+          },
+          "kl": {
+            "forward_kl_nats": 0.10687744950413539,
+            "forward_kl_prompt_macro_95_ci": [
+              0.06889249121121117,
+              0.1572862905618967
+            ],
+            "jensen_shannon_nats": 0.02056770033860969,
+            "token_count": 637,
+            "top1_agreement": 0.9481946624803768
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 506,
+          "natural_update_denominator": 520,
+          "pressure_denominator": 2370,
+          "pressure_error": 0.41856540084388183,
+          "pressure_error_count": 992,
+          "pressure_reduction_95_ci_pp": [
+            0.5907172995780591,
+            1.6033755274261603
+          ],
+          "pressure_reduction_pp": 1.0970464135021119
+        }
+      ]
+    },
+    "Gemma 4 E4B": {
+      "artifact_sha256": {
+        "behavior": "e1b124d9dfef882bda09fefd3c1a26dabf2baa9e56d50caa725173c7e42546bd",
+        "directions": "bd4c5b82dd32686d98e5938040fecfac2a4b3cd690b3951e2157c8dca2aba70e",
+        "fit": "f2358329d33fab1de713b3818a4c54b69a210e7c3c50b7a60cdee4c9efb41704",
+        "gsm": "d6e92450fdfe8e36c6922d5aa44545ea408b56a8f1ba4a4e4bd97cf25286c6d0",
+        "kl": "291cc1f8cf8a8145a931bae49f42f0be2d38c91d29ac4edcbc73893b356487c5"
+      },
+      "base": {
+        "controlled_acceptance_count": 1305,
+        "controlled_acceptance_denominator": 1310,
+        "gsm_correct_count": 104,
+        "gsm_denominator": 256,
+        "natural_update_count": 332,
+        "natural_update_denominator": 337,
+        "pressure_denominator": 2919,
+        "pressure_error": 0.3761562178828366,
+        "pressure_error_count": 1098
+      },
+      "direction_norm": 14.567340908198512,
+      "direction_tensor_sha256": "6d0b232dcbea3382b9cdb3b66f3ceacaed5005449728a295740420efaa9c4f97",
+      "fit_record_count": 300,
+      "held_out_probe_auroc": 0.9663529237382347,
+      "model_key": "gemma4_e4b_it",
+      "primary_zero_based_layer": 28,
+      "probe_record_count": 100,
+      "random_direction_controls": 5,
+      "retained_layers": [
+        28,
+        27
+      ],
+      "run_directory": "results/runs/expanded_gemma4_e4b_20260805",
+      "trials": [
+        {
+          "alpha": -0.5,
+          "controlled_acceptance_count": 1303,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.0,
+            0.3816793893129771
+          ],
+          "controlled_stubbornness_increase_pp": 0.15267175572519776,
+          "gsm": {
+            "correct_count": 103,
+            "delta_pp": -0.390625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 1.0,
+            "improved": 9,
+            "paired_95_ci_pp": [
+              -3.90625,
+              3.125
+            ],
+            "regressed": 10
+          },
+          "kl": {
+            "forward_kl_nats": 0.005144606816518728,
+            "forward_kl_prompt_macro_95_ci": [
+              0.0039031279035523937,
+              0.006680596002937723
+            ],
+            "jensen_shannon_nats": 0.0012245566630355485,
+            "token_count": 1006,
+            "top1_agreement": 0.9801192842942346
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            1.483679525222552
+          ],
+          "natural_stubbornness_increase_pp": 0.5934718100890302,
+          "natural_update_count": 330,
+          "natural_update_denominator": 337,
+          "pressure_denominator": 2919,
+          "pressure_error": 0.32408359027064065,
+          "pressure_error_count": 946,
+          "pressure_reduction_95_ci_pp": [
+            4.385063377869134,
+            6.029462144570058
+          ],
+          "pressure_reduction_pp": 5.207262761219594
+        },
+        {
+          "alpha": -1.0,
+          "controlled_acceptance_count": 1300,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.07633587786259542,
+            0.7633587786259542
+          ],
+          "controlled_stubbornness_increase_pp": 0.3816793893129833,
+          "gsm": {
+            "correct_count": 100,
+            "delta_pp": -1.5625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 0.5234670639038086,
+            "improved": 9,
+            "paired_95_ci_pp": [
+              -5.078125,
+              1.953125
+            ],
+            "regressed": 13
+          },
+          "kl": {
+            "forward_kl_nats": 0.017598140291871817,
+            "forward_kl_prompt_macro_95_ci": [
+              0.013504375534215518,
+              0.022585551448763168
+            ],
+            "jensen_shannon_nats": 0.003952830510515473,
+            "token_count": 1006,
+            "top1_agreement": 0.9701789264413518
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.2967359050445104,
+            2.373887240356083
+          ],
+          "natural_stubbornness_increase_pp": 1.1869436201780492,
+          "natural_update_count": 328,
+          "natural_update_denominator": 337,
+          "pressure_denominator": 2919,
+          "pressure_error": 0.2692702980472765,
+          "pressure_error_count": 786,
+          "pressure_reduction_95_ci_pp": [
+            9.59232613908873,
+            11.784857828023295
+          ],
+          "pressure_reduction_pp": 10.688591983556012
+        },
+        {
+          "alpha": -2.0,
+          "controlled_acceptance_count": 1288,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.7633587786259542,
+            1.9083969465648856
+          ],
+          "controlled_stubbornness_increase_pp": 1.2977099236641254,
+          "gsm": {
+            "correct_count": 104,
+            "delta_pp": 0.0,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 1.0,
+            "improved": 13,
+            "paired_95_ci_pp": [
+              -3.90625,
+              3.90625
+            ],
+            "regressed": 13
+          },
+          "kl": {
+            "forward_kl_nats": 0.06516385129130575,
+            "forward_kl_prompt_macro_95_ci": [
+              0.050546301982764816,
+              0.08347358436646166
+            ],
+            "jensen_shannon_nats": 0.012801678291732814,
+            "token_count": 1006,
+            "top1_agreement": 0.9572564612326043
+          },
+          "natural_stubbornness_95_ci_pp": [
+            2.6706231454005934,
+            7.12166172106825
+          ],
+          "natural_stubbornness_increase_pp": 4.747774480712175,
+          "natural_update_count": 316,
+          "natural_update_denominator": 337,
+          "pressure_denominator": 2919,
+          "pressure_error": 0.1658102089756766,
+          "pressure_error_count": 484,
+          "pressure_reduction_95_ci_pp": [
+            19.561493662213085,
+            22.473449811579307
+          ],
+          "pressure_reduction_pp": 21.034600890716
+        }
+      ]
+    },
+    "Qwen3.5-2B": {
+      "artifact_sha256": {
+        "behavior": "b8621f4b2caeb4d6c25e5f72fcbb0121ece59aad737b23d2f170c3183b9b6dd4",
+        "directions": "307f12d5d75258e7dc931a0f192c4c256d97b5952d088b912c8f8e03f5de5fc1",
+        "fit": "4b0cbcc1d1aa2a4cf9080d238fa4cc5cbf4947e15534f537e14faea9ec9ca410",
+        "gsm": "c37f20b643e9c504568e5ee3b36ce8edf95dfd5a55e55ad215d72a824116548c",
+        "kl": "c7ab9597ddf64886ceafa93131aaff19d8cd95ccc085dd03573573b5c3c58ea0"
+      },
+      "base": {
+        "controlled_acceptance_count": 1308,
+        "controlled_acceptance_denominator": 1310,
+        "gsm_correct_count": 84,
+        "gsm_denominator": 256,
+        "natural_update_count": 427,
+        "natural_update_denominator": 429,
+        "pressure_denominator": 2643,
+        "pressure_error": 0.553159288687098,
+        "pressure_error_count": 1462
+      },
+      "direction_norm": 0.07218163989391067,
+      "direction_tensor_sha256": "e33f0bd5461f95d607876c0f098b28b3c6939a8d68f61507058b680a77d3d7dd",
+      "fit_record_count": 300,
+      "held_out_probe_auroc": 0.829170731707317,
+      "model_key": "qwen35_2b",
+      "primary_zero_based_layer": 3,
+      "probe_record_count": 100,
+      "random_direction_controls": 5,
+      "retained_layers": [
+        3,
+        23
+      ],
+      "run_directory": "results/runs/expanded_qwen35_2b_20260805",
+      "trials": [
+        {
+          "alpha": -0.5,
+          "controlled_acceptance_count": 1309,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            -0.22900763358778627,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": -0.07633587786258778,
+          "gsm": {
+            "correct_count": 83,
+            "delta_pp": -0.390625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 1.0,
+            "improved": 6,
+            "paired_95_ci_pp": [
+              -3.125,
+              2.34375
+            ],
+            "regressed": 7
+          },
+          "kl": {
+            "forward_kl_nats": 0.000715423653060129,
+            "forward_kl_prompt_macro_95_ci": [
+              0.0006316694543867384,
+              0.0008065684847078965
+            ],
+            "jensen_shannon_nats": 0.00017872282407833078,
+            "token_count": 1024,
+            "top1_agreement": 0.986328125
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 427,
+          "natural_update_denominator": 429,
+          "pressure_denominator": 2643,
+          "pressure_error": 0.5467272039349225,
+          "pressure_error_count": 1445,
+          "pressure_reduction_95_ci_pp": [
+            0.11350737797956867,
+            1.1729095724555427
+          ],
+          "pressure_reduction_pp": 0.6432084752175493
+        },
+        {
+          "alpha": -1.0,
+          "controlled_acceptance_count": 1309,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            -0.22900763358778627,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": -0.07633587786258778,
+          "gsm": {
+            "correct_count": 85,
+            "delta_pp": 0.390625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 1.0,
+            "improved": 9,
+            "paired_95_ci_pp": [
+              -2.734375,
+              3.515625
+            ],
+            "regressed": 8
+          },
+          "kl": {
+            "forward_kl_nats": 0.0008163894565286527,
+            "forward_kl_prompt_macro_95_ci": [
+              0.0007015126800682437,
+              0.0009477299326140495
+            ],
+            "jensen_shannon_nats": 0.00020380731408120383,
+            "token_count": 1024,
+            "top1_agreement": 0.98828125
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 427,
+          "natural_update_denominator": 429,
+          "pressure_denominator": 2643,
+          "pressure_error": 0.5508891411275066,
+          "pressure_error_count": 1456,
+          "pressure_reduction_95_ci_pp": [
+            -0.2648505486189936,
+            0.681044267877412
+          ],
+          "pressure_reduction_pp": 0.2270147559591318
+        },
+        {
+          "alpha": -2.0,
+          "controlled_acceptance_count": 1309,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            -0.22900763358778627,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": -0.07633587786258778,
+          "gsm": {
+            "correct_count": 82,
+            "delta_pp": -0.78125,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 0.79052734375,
+            "improved": 6,
+            "paired_95_ci_pp": [
+              -3.515625,
+              1.953125
+            ],
+            "regressed": 8
+          },
+          "kl": {
+            "forward_kl_nats": 0.0012150622766622676,
+            "forward_kl_prompt_macro_95_ci": [
+              0.0009835561200351212,
+              0.0014999032101995046
+            ],
+            "jensen_shannon_nats": 0.00030316375497162147,
+            "token_count": 1024,
+            "top1_agreement": 0.9853515625
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 427,
+          "natural_update_denominator": 429,
+          "pressure_denominator": 2643,
+          "pressure_error": 0.5493757094211124,
+          "pressure_error_count": 1452,
+          "pressure_reduction_95_ci_pp": [
+            -0.18917896329928122,
+            0.9458948164964056
+          ],
+          "pressure_reduction_pp": 0.3783579265985604
+        }
+      ]
+    },
+    "Qwen3.5-4B": {
+      "artifact_sha256": {
+        "behavior": "f290b610de9c11cf3c7eb9a63cb8b1697c6688798e8d08ff6754cbf3eb174dd9",
+        "directions": "c38cd968d486cda76e67b7f725e7845a97f4bf340dea76664b27833732360973",
+        "fit": "f91032448e73a8b107ba12b2ba8ba03054da1e3a5b4398b717fc528e34b7e959",
+        "gsm": "27f95ad03cef095192cbae0a566393924da6c1e1e6d8401f4a5e36b3444b9a31",
+        "kl": "1050e2fc051850d7bfb780f7686ccca354ba61ab39eba413e324d993223826cc"
+      },
+      "base": {
+        "controlled_acceptance_count": 1308,
+        "controlled_acceptance_denominator": 1310,
+        "gsm_correct_count": 103,
+        "gsm_denominator": 256,
+        "natural_update_count": 256,
+        "natural_update_denominator": 258,
+        "pressure_denominator": 3156,
+        "pressure_error": 0.4134980988593156,
+        "pressure_error_count": 1305
+      },
+      "direction_norm": 1.504153177235416,
+      "direction_tensor_sha256": "d8aceb6b867d862099184788c07a01cdff10babafe2536932868de79b2f0504a",
+      "fit_record_count": 300,
+      "held_out_probe_auroc": 0.9238151194672933,
+      "model_key": "qwen35_4b",
+      "primary_zero_based_layer": 18,
+      "probe_record_count": 100,
+      "random_direction_controls": 5,
+      "retained_layers": [
+        18,
+        17
+      ],
+      "run_directory": "results/runs/expanded_qwen35_4b_20260805",
+      "trials": [
+        {
+          "alpha": -0.5,
+          "controlled_acceptance_count": 1308,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "controlled_stubbornness_increase_pp": 0.0,
+          "gsm": {
+            "correct_count": 102,
+            "delta_pp": -0.390625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 1.0,
+            "improved": 11,
+            "paired_95_ci_pp": [
+              -4.296875,
+              3.125
+            ],
+            "regressed": 12
+          },
+          "kl": {
+            "forward_kl_nats": 0.005806148674637534,
+            "forward_kl_prompt_macro_95_ci": [
+              0.004367517368181178,
+              0.0075842212327131885
+            ],
+            "jensen_shannon_nats": 0.001419287393619073,
+            "token_count": 1024,
+            "top1_agreement": 0.962890625
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "natural_stubbornness_increase_pp": 0.0,
+          "natural_update_count": 256,
+          "natural_update_denominator": 258,
+          "pressure_denominator": 3156,
+          "pressure_error": 0.3593155893536122,
+          "pressure_error_count": 1134,
+          "pressure_reduction_95_ci_pp": [
+            4.626108998732573,
+            6.210392902408112
+          ],
+          "pressure_reduction_pp": 5.418250950570341
+        },
+        {
+          "alpha": -1.0,
+          "controlled_acceptance_count": 1307,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.0,
+            0.22900763358778627
+          ],
+          "controlled_stubbornness_increase_pp": 0.07633587786259888,
+          "gsm": {
+            "correct_count": 107,
+            "delta_pp": 1.5625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 0.5715881884098053,
+            "improved": 16,
+            "paired_95_ci_pp": [
+              -2.34375,
+              5.46875
+            ],
+            "regressed": 12
+          },
+          "kl": {
+            "forward_kl_nats": 0.022391460246649605,
+            "forward_kl_prompt_macro_95_ci": [
+              0.016186291467798455,
+              0.03000220510523309
+            ],
+            "jensen_shannon_nats": 0.005225941609733308,
+            "token_count": 1024,
+            "top1_agreement": 0.93359375
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.0,
+            1.1627906976744186
+          ],
+          "natural_stubbornness_increase_pp": 0.3875968992248069,
+          "natural_update_count": 255,
+          "natural_update_denominator": 258,
+          "pressure_denominator": 3156,
+          "pressure_error": 0.3190747782002535,
+          "pressure_error_count": 1007,
+          "pressure_reduction_95_ci_pp": [
+            8.460076045627376,
+            10.424588086185043
+          ],
+          "pressure_reduction_pp": 9.44233206590621
+        },
+        {
+          "alpha": -2.0,
+          "controlled_acceptance_count": 1303,
+          "controlled_acceptance_denominator": 1310,
+          "controlled_stubbornness_95_ci_pp": [
+            0.07633587786259542,
+            0.7633587786259542
+          ],
+          "controlled_stubbornness_increase_pp": 0.3816793893129833,
+          "gsm": {
+            "correct_count": 104,
+            "delta_pp": 0.390625,
+            "denominator": 256,
+            "exact_two_sided_sign_p": 1.0,
+            "improved": 16,
+            "paired_95_ci_pp": [
+              -3.90625,
+              4.6875
+            ],
+            "regressed": 15
+          },
+          "kl": {
+            "forward_kl_nats": 0.08999526645139339,
+            "forward_kl_prompt_macro_95_ci": [
+              0.06570555929109848,
+              0.1196504156530894
+            ],
+            "jensen_shannon_nats": 0.01867279048272642,
+            "token_count": 1024,
+            "top1_agreement": 0.88671875
+          },
+          "natural_stubbornness_95_ci_pp": [
+            0.3875968992248062,
+            3.875968992248062
+          ],
+          "natural_stubbornness_increase_pp": 1.9379844961240345,
+          "natural_update_count": 251,
+          "natural_update_denominator": 258,
+          "pressure_denominator": 3156,
+          "pressure_error": 0.25633713561470217,
+          "pressure_error_count": 809,
+          "pressure_reduction_95_ci_pp": [
+            14.512040557667932,
+            16.888466413181245
+          ],
+          "pressure_reduction_pp": 15.716096324461343
+        }
+      ]
+    }
+  },
+  "schema_version": "four_model_frontier_verification.v2",
+  "evidence_scope": {
+    "endpoint_results": "verified_from_persisted_response_and_metric_primitives",
+    "generalization_targets": [
+      "additional_model_families_and_sizes",
+      "larger_random_control_bank",
+      "matched_precision_and_intervention_units"
+    ],
+    "interpretation": "direct_intervention_estimates_for_the_executed_four_model_panel",
+    "layer_selection": "held_out_probe_with_five_seeded_random_controls_per_layer"
+  },
+  "verification": {
+    "behavior_raw_count_recomputation": "pass",
+    "cross_model_gsm_identity": "pass",
+    "cross_model_kl_context_identity": "pass",
+    "final_checkpoint_exclusivity": "pass",
+    "gsm_raw_count_and_pairing_recomputation": "pass",
+    "kl_primitive_statistic_recomputation": "pass",
+    "model_layer_direction_identity": "pass"
+  }
+}
