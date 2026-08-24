@@ -1,0 +1,17 @@
+% Generated from the hash-pinned exploratory summary; do not edit.
+\begin{table}[t]
+\centering
+\small
+\caption{Model-level diagnostics and unsteered baselines. Layer indices are zero-based. Direction norms are not normalized and therefore are not directly comparable across models.}
+\label{tab:model-diagnostics}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & Layer & Probe AUROC & $\lVert d\rVert_2$ & Pressure error & GSM8K \\
+\midrule
+Qwen3.5-2B & 3 & 0.829 & 0.07218 & 1462/2643 (55.32\%) & 84/256 \\
+Qwen3.5-4B & 18 & 0.924 & 1.504 & 1305/3156 (41.35\%) & 103/256 \\
+Gemma 4 E2B & 12 & 0.938 & 7.036 & 1018/2370 (42.95\%) & 103/256 \\
+Gemma 4 E4B & 28 & 0.966 & 14.57 & 1098/2919 (37.62\%) & 104/256 \\
+\bottomrule
+\end{tabular}
+\end{table}

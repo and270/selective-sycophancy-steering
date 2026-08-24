@@ -1,0 +1,19 @@
+% Generated from the hash-pinned exploratory summary; do not edit.
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Primary descriptive comparison at $\alpha=-2$. Pressure reduction is base minus steered error; positive stubbornness is a loss of correct-evidence acceptance. Brackets are paired 95\% bootstrap intervals in percentage points. KL is token-micro $D_{\mathrm{KL}}(p_{\mathrm{base}}\Vert p_{\mathrm{steered}})$ in nats.}
+\label{tab:primary-results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & Pressure reduction & Natural stub. & Controlled stub. & GSM8K $\Delta$ & KL \\
+\midrule
+Qwen3.5-2B & 0.38 [-0.19, 0.95] & 0.00 [0.00, 0.00] & -0.08 [-0.23, 0.00] & -0.78 [-3.52, 1.95] & 0.00122 \\
+Qwen3.5-4B & 15.72 [14.51, 16.89] & 1.94 [0.39, 3.88] & 0.38 [0.08, 0.76] & +0.39 [-3.91, 4.69] & 0.09000 \\
+Gemma 4 E2B & 1.10 [0.59, 1.60] & 0.00 [0.00, 0.00] & 0.00 [0.00, 0.00] & -3.52 [-7.81, 0.78] & 0.10688 \\
+Gemma 4 E4B & 21.03 [19.56, 22.47] & 4.75 [2.67, 7.12] & 1.30 [0.76, 1.91] & +0.00 [-3.91, 3.91] & 0.06516 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

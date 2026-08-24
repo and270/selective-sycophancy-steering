@@ -1,0 +1,87 @@
+[project]
+name = "selective-sycophancy-steering"
+version = "1.0.0"
+description = "Reproducible activation steering for factual sycophancy and epistemic selectivity"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+license-files = [
+  "LICENSE*",
+  "NOTICE.md",
+  "THIRD_PARTY.md",
+  "DATA_LICENSES.md",
+  "MODEL_TERMS.md",
+  "licenses/*",
+]
+requires-python = ">=3.11"
+authors = [
+  { name = "André de Souza Loureiro", email = "andresloureiross@gmail.com" },
+]
+keywords = ["activation-steering", "sycophancy", "representation-engineering", "llm-evaluation"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Environment :: GPU :: NVIDIA CUDA",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "accelerate>=1.13,<2",
+  "datasets>=4.7,<5",
+  "huggingface-hub>=1,<2",
+  "numpy>=2.2,<3",
+  "pyarrow>=21,<26",
+  "safetensors>=0.6,<1",
+  "torch",
+  "transformers>=5.6,<6",
+  "tqdm>=4.67,<5",
+]
+
+[project.urls]
+Homepage = "https://github.com/and270/selective-sycophancy-steering"
+Repository = "https://github.com/and270/selective-sycophancy-steering"
+Issues = "https://github.com/and270/selective-sycophancy-steering/issues"
+
+[project.optional-dependencies]
+quantization = ["bitsandbytes>=0.49,<0.50"]
+benchmarks = ["pyyaml>=6.0,<7"]
+
+[dependency-groups]
+dev = [
+  "pytest>=9.0.3,<10",
+  "ruff>=0.14,<0.15",
+  "ty>=0.0.5",
+]
+
+[project.scripts]
+sycophancy-steering = "sycophancy_steering.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.11,<0.9.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu126", marker = "sys_platform == 'win32'" },
+]
+
+[tool.uv.build-backend]
+module-name = "sycophancy_steering"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF", "SIM", "PTH"]

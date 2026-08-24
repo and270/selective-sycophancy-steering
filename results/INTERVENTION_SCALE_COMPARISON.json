@@ -1,0 +1,174 @@
+{
+  "definitions": {
+    "alpha_magnitudes": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "direction_norm": "||d_l||_2 from fit_probe.json metadata for the chosen estimator and primary layer",
+    "mean_probe_residual_norm": "mean_i ||H_probe[i, l, :]||_2",
+    "median_probe_residual_norm": "median_i ||H_probe[i, l, :]||_2",
+    "numeric_rounding": "12 significant decimal digits",
+    "relative_update_fraction": "rho(alpha) = |alpha| * ||d_l||_2 / mean_i ||H_probe[i, l, :]||_2",
+    "residual_rows": "first-axis rows of probe_prompt_residuals at the primary zero-based layer"
+  },
+  "models": [
+    {
+      "direction_l2_norm": 0.07218163460493088,
+      "model_key": "qwen35_2b",
+      "model_label": "Qwen3.5-2B",
+      "primary_estimator": "observed_prompt_state",
+      "primary_zero_based_layer": 3,
+      "probe_prompt_residuals": {
+        "computation_dtype": "float64",
+        "first_axis_count": 207,
+        "hidden_size": 2048,
+        "l2_mean": 2.60589459854,
+        "l2_median": 2.60653448646,
+        "on_disk_dtype": "torch.float32"
+      },
+      "relative_update_by_alpha_magnitude": [
+        {
+          "alpha_magnitude": 0.5,
+          "fraction_of_mean_probe_residual_norm": 0.0138496842208,
+          "percent_of_mean_probe_residual_norm": 1.38496842208
+        },
+        {
+          "alpha_magnitude": 1.0,
+          "fraction_of_mean_probe_residual_norm": 0.0276993684416,
+          "percent_of_mean_probe_residual_norm": 2.76993684416
+        },
+        {
+          "alpha_magnitude": 2.0,
+          "fraction_of_mean_probe_residual_norm": 0.0553987368833,
+          "percent_of_mean_probe_residual_norm": 5.53987368833
+        }
+      ],
+      "source": {
+        "fit_probe_path": "results/runs/expanded_qwen35_2b_20260805/fit_probe/fit_probe.json",
+        "fit_probe_sha256": "4b0cbcc1d1aa2a4cf9080d238fa4cc5cbf4947e15534f537e14faea9ec9ca410",
+        "observations_path": "results/runs/expanded_qwen35_2b_20260805/fit_probe/observations.safetensors",
+        "observations_sha256": "fba5fa99ece754d3e118042d298acad5483e73c66f8177cf1339a47d8728611f",
+        "probe_prompt_residuals_tensor_sha256": "7d1c41495035499bed0e6c5cf74e8b5d031c0077bf282bb350d9b6527e0af4b9"
+      }
+    },
+    {
+      "direction_l2_norm": 1.5041530132293701,
+      "model_key": "qwen35_4b",
+      "model_label": "Qwen3.5-4B",
+      "primary_estimator": "observed_prompt_state",
+      "primary_zero_based_layer": 18,
+      "probe_prompt_residuals": {
+        "computation_dtype": "float64",
+        "first_axis_count": 249,
+        "hidden_size": 2560,
+        "l2_mean": 10.5838391864,
+        "l2_median": 10.5921478708,
+        "on_disk_dtype": "torch.float32"
+      },
+      "relative_update_by_alpha_magnitude": [
+        {
+          "alpha_magnitude": 0.5,
+          "fraction_of_mean_probe_residual_norm": 0.0710589506668,
+          "percent_of_mean_probe_residual_norm": 7.10589506668
+        },
+        {
+          "alpha_magnitude": 1.0,
+          "fraction_of_mean_probe_residual_norm": 0.142117901334,
+          "percent_of_mean_probe_residual_norm": 14.2117901334
+        },
+        {
+          "alpha_magnitude": 2.0,
+          "fraction_of_mean_probe_residual_norm": 0.284235802667,
+          "percent_of_mean_probe_residual_norm": 28.4235802667
+        }
+      ],
+      "source": {
+        "fit_probe_path": "results/runs/expanded_qwen35_4b_20260805/fit_probe/fit_probe.json",
+        "fit_probe_sha256": "f91032448e73a8b107ba12b2ba8ba03054da1e3a5b4398b717fc528e34b7e959",
+        "observations_path": "results/runs/expanded_qwen35_4b_20260805/fit_probe/observations.safetensors",
+        "observations_sha256": "8b459f8c1ca2368de847e0d09c77d5699aa8f8f0614217caf2a17a1bf1d27b7b",
+        "probe_prompt_residuals_tensor_sha256": "eca974ef110b17196bfd7d981956919f893f13a5ab78c60ab54de2351b8b97a0"
+      }
+    },
+    {
+      "direction_l2_norm": 7.035619258880615,
+      "model_key": "gemma4_e2b_it",
+      "model_label": "Gemma 4 E2B",
+      "primary_estimator": "observed_prompt_state",
+      "primary_zero_based_layer": 12,
+      "probe_prompt_residuals": {
+        "computation_dtype": "float64",
+        "first_axis_count": 174,
+        "hidden_size": 1536,
+        "l2_mean": 46.3199472924,
+        "l2_median": 45.8819431937,
+        "on_disk_dtype": "torch.float32"
+      },
+      "relative_update_by_alpha_magnitude": [
+        {
+          "alpha_magnitude": 0.5,
+          "fraction_of_mean_probe_residual_norm": 0.0759458901633,
+          "percent_of_mean_probe_residual_norm": 7.59458901633
+        },
+        {
+          "alpha_magnitude": 1.0,
+          "fraction_of_mean_probe_residual_norm": 0.151891780327,
+          "percent_of_mean_probe_residual_norm": 15.1891780327
+        },
+        {
+          "alpha_magnitude": 2.0,
+          "fraction_of_mean_probe_residual_norm": 0.303783560653,
+          "percent_of_mean_probe_residual_norm": 30.3783560653
+        }
+      ],
+      "source": {
+        "fit_probe_path": "results/runs/expanded_gemma4_e2b_20260805/fit_probe/fit_probe.json",
+        "fit_probe_sha256": "64723bcd58db0a84a1230047e7033d4295d0f628b1fbc70609e144574de85550",
+        "observations_path": "results/runs/expanded_gemma4_e2b_20260805/fit_probe/observations.safetensors",
+        "observations_sha256": "a55db25fab3fe2252b508f9d9a8b72917945d7b961c8bf170d15c8f101a623ec",
+        "probe_prompt_residuals_tensor_sha256": "232cd7a1182d028025509f78b3ff6270ca1fd8af7e3e2cb4acb2e8a139402cd7"
+      }
+    },
+    {
+      "direction_l2_norm": 14.567340850830078,
+      "model_key": "gemma4_e4b_it",
+      "model_label": "Gemma 4 E4B",
+      "primary_estimator": "observed_prompt_state",
+      "primary_zero_based_layer": 28,
+      "probe_prompt_residuals": {
+        "computation_dtype": "float64",
+        "first_axis_count": 234,
+        "hidden_size": 2560,
+        "l2_mean": 128.065739851,
+        "l2_median": 128.007684092,
+        "on_disk_dtype": "torch.float32"
+      },
+      "relative_update_by_alpha_magnitude": [
+        {
+          "alpha_magnitude": 0.5,
+          "fraction_of_mean_probe_residual_norm": 0.0568744648952,
+          "percent_of_mean_probe_residual_norm": 5.68744648952
+        },
+        {
+          "alpha_magnitude": 1.0,
+          "fraction_of_mean_probe_residual_norm": 0.11374892979,
+          "percent_of_mean_probe_residual_norm": 11.374892979
+        },
+        {
+          "alpha_magnitude": 2.0,
+          "fraction_of_mean_probe_residual_norm": 0.227497859581,
+          "percent_of_mean_probe_residual_norm": 22.7497859581
+        }
+      ],
+      "source": {
+        "fit_probe_path": "results/runs/expanded_gemma4_e4b_20260805/fit_probe/fit_probe.json",
+        "fit_probe_sha256": "f2358329d33fab1de713b3818a4c54b69a210e7c3c50b7a60cdee4c9efb41704",
+        "observations_path": "results/runs/expanded_gemma4_e4b_20260805/fit_probe/observations.safetensors",
+        "observations_sha256": "6b4e0382d150f0b4075c02ae45239e32b583dfce4991ee1ea4461e00cd5e3f1f",
+        "probe_prompt_residuals_tensor_sha256": "7af1eec7a25d88ee502448422aaa12c527aad82a26a3183c73e3b0f011ba8c2c"
+      }
+    }
+  ],
+  "schema_version": "intervention_scale_comparison.v1"
+}

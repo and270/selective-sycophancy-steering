@@ -1,0 +1,26 @@
+% Generated from the hash-pinned exploratory summary; do not edit.
+\begin{table}[p]
+\centering
+\scriptsize
+\caption{Complete executed frontier. All changes are percentage points. Pressure and correction intervals use paired source-stratified record-cluster bootstraps; GSM8K intervals are paired item bootstraps; $p_{\mathrm{sign}}$ is the exact two-sided sign test on discordant pairs. Top-1 is token-level agreement on the frozen neutral trajectories.}
+\label{tab:full-frontier}
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+Model & $\alpha$ & Pressure reduction & Natural stub. & Controlled stub. & GSM8K $\Delta$ & $p_{\mathrm{sign}}$ & KL & Top-1 (\%) \\
+\midrule
+Qwen3.5-2B & -0.5 & 0.64 [0.11, 1.17] & 0.00 [0.00, 0.00] & -0.08 [-0.23, 0.00] & -0.39 [-3.12, 2.34] & 1.000 & 0.000715 & 98.63 \\
+Qwen3.5-2B & -1 & 0.23 [-0.26, 0.68] & 0.00 [0.00, 0.00] & -0.08 [-0.23, 0.00] & +0.39 [-2.73, 3.52] & 1.000 & 0.000816 & 98.83 \\
+Qwen3.5-2B & -2 & 0.38 [-0.19, 0.95] & 0.00 [0.00, 0.00] & -0.08 [-0.23, 0.00] & -0.78 [-3.52, 1.95] & 0.791 & 0.001215 & 98.54 \\
+Qwen3.5-4B & -0.5 & 5.42 [4.63, 6.21] & 0.00 [0.00, 0.00] & 0.00 [0.00, 0.00] & -0.39 [-4.30, 3.12] & 1.000 & 0.005806 & 96.29 \\
+Qwen3.5-4B & -1 & 9.44 [8.46, 10.42] & 0.39 [0.00, 1.16] & 0.08 [0.00, 0.23] & +1.56 [-2.34, 5.47] & 0.572 & 0.022391 & 93.36 \\
+Qwen3.5-4B & -2 & 15.72 [14.51, 16.89] & 1.94 [0.39, 3.88] & 0.38 [0.08, 0.76] & +0.39 [-3.91, 4.69] & 1.000 & 0.089995 & 88.67 \\
+Gemma 4 E2B & -0.5 & 0.13 [-0.21, 0.46] & 0.00 [0.00, 0.00] & 0.00 [0.00, 0.00] & -1.95 [-5.08, 0.78] & 0.302 & 0.005008 & 98.90 \\
+Gemma 4 E2B & -1 & 0.55 [0.13, 0.97] & 0.00 [0.00, 0.00] & 0.00 [0.00, 0.00] & -3.91 [-7.81, -0.39] & 0.064 & 0.021057 & 98.12 \\
+Gemma 4 E2B & -2 & 1.10 [0.59, 1.60] & 0.00 [0.00, 0.00] & 0.00 [0.00, 0.00] & -3.52 [-7.81, 0.78] & 0.163 & 0.106877 & 94.82 \\
+Gemma 4 E4B & -0.5 & 5.21 [4.39, 6.03] & 0.59 [0.00, 1.48] & 0.15 [0.00, 0.38] & -0.39 [-3.91, 3.12] & 1.000 & 0.005145 & 98.01 \\
+Gemma 4 E4B & -1 & 10.69 [9.59, 11.78] & 1.19 [0.30, 2.37] & 0.38 [0.08, 0.76] & -1.56 [-5.08, 1.95] & 0.523 & 0.017598 & 97.02 \\
+Gemma 4 E4B & -2 & 21.03 [19.56, 22.47] & 4.75 [2.67, 7.12] & 1.30 [0.76, 1.91] & +0.00 [-3.91, 3.91] & 1.000 & 0.065164 & 95.73 \\
+\bottomrule
+\end{tabular}
+\end{table}

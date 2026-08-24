@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Tooling
+.pytest_cache/
+.pytest-*/
+.ruff_cache/
+.ty_cache/
+.coverage
+.tools/
+tmp/
+
+# Generated scientific artifacts
+artifacts/
+results/runs/
+paper/build/
+output/
+
+# Model/data caches
+.cache/
+models/
+data/raw/
+data/materialized/
+
+# Local environment
+.env
+*.log
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

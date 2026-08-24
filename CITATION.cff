@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or its study artifacts, please cite the accompanying paper and the upstream methods/datasets listed in the repository."
+title: "Selective Sycophancy Steering"
+type: software
+version: 1.0.0
+date-released: 2026-08-24
+authors:
+  - family-names: "Loureiro"
+    given-names: "André de Souza"
+    affiliation: "Ampliia"
+    email: "andresloureiross@gmail.com"
+license: AGPL-3.0-or-later
+repository-code: "https://github.com/and270/selective-sycophancy-steering"
+url: "https://github.com/and270/selective-sycophancy-steering"
+keywords:
+  - activation steering
+  - sycophancy
+  - evidence updating
+  - representation engineering
+  - language model evaluation
+preferred-citation:
+  type: article
+  title: "Reducing Sycophancy in Small Language Models with Runtime Activation Steering: Efficacy, Stubbornness, and Capability Trade-offs"
+  authors:
+    - family-names: "Loureiro"
+      given-names: "André de Souza"
+      affiliation: "Ampliia"
+      email: "andresloureiross@gmail.com"
+  year: 2026
+  month: 8
+  status: preprint
+  doi: "10.5281/zenodo.22082268"
+  url: "https://zenodo.org/records/22082268"
